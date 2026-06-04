@@ -17,11 +17,11 @@ client = OpenAI(
 
 def get_db_connection():
     return mysql.connector.connect(
-        host="sql8.freesqldatabase.com",
-        user="sql8826317",
-        password="u6E8wQd2Sf",
-        database="sql8826317",
-        port=3306
+        host=os.environ.get("MYSQLHOST"),
+        user=os.environ.get("MYSQLUSER"),
+        password=os.environ.get("MYSQLPASSWORD"),
+        database=os.environ.get("MYSQLDATABASE"),
+        port=int(os.environ.get("MYSQLPORT", 3306))
     )
 
 try:

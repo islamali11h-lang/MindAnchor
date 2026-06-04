@@ -1,0 +1,5 @@
+MYSQLHOST = mysql.railway.internal
+MYSQLUSER = root
+MYSQLPASSWORD = uSGaXhfKaiAenNepHpBcreYwUnxuXVtG
+MYSQLDATABASE = railway
+MYSQLPORT = 3306
